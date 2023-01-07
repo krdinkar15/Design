@@ -1,4 +1,4 @@
-package structural.adapter;
+package structural.adapter.socket;
 
 public class Volt {
 

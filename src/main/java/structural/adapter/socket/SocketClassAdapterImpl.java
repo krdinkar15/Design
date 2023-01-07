@@ -1,24 +1,23 @@
-package structural.adapter;
+package structural.adapter.socket;
 
-public class SocketObjectAdapterImpl implements SocketAdapter{
-
-    // Using composition for adapter pattern
-    private Socket socket=new Socket();
+public class SocketClassAdapterImpl extends Socket implements SocketAdapter{
     @Override
     public Volt get120Volt() {
-        return socket.getVolt();
+        return getVolt();
     }
 
     @Override
     public Volt get12Volt() {
-        Volt v= socket.getVolt();
+        Volt v= getVolt();
         return convertVolt(v,10);
+
     }
 
     @Override
     public Volt get3Volt() {
-        Volt v= socket.getVolt();
+        Volt v= getVolt();
         return convertVolt(v,40);
+
     }
     private Volt convertVolt(Volt v, int i) {
         return new Volt(v.getVolts()/i);
