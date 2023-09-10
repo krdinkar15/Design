@@ -1,4 +1,4 @@
-package designPatterns.chainOfResponsibility.ATM;
+package designPatterns.behavioral.chainOfResponsibility.ATM;
 
 public interface DispenseChain {
     void setNextChain(DispenseChain nextChain);

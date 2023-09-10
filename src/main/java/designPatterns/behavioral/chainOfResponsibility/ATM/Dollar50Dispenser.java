@@ -1,4 +1,4 @@
-package designPatterns.chainOfResponsibility.ATM;
+package designPatterns.behavioral.chainOfResponsibility.ATM;
 
 public class Dollar50Dispenser implements DispenseChain {
 

@@ -1,4 +1,4 @@
-package designPatterns.chainOfResponsibility;
+package designPatterns.behavioral.chainOfResponsibility;
 
 public class Chain
 {
